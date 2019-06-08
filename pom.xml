@@ -3,7 +3,7 @@
     <parent>
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>plugin</artifactId>
-        <version>3.2</version>
+        <version>3.43</version>
     </parent>
 
     <name>Badge</name>
@@ -38,10 +38,10 @@
     </licenses>
 
     <properties>
-        <jenkins.version>2.60.3</jenkins.version>
+        <jenkins.version>2.121.1</jenkins.version>
         <java.level>8</java.level>
-        <workflow-step-api-plugin.version>2.14</workflow-step-api-plugin.version>
-        <workflow-cps-plugin.version>2.45</workflow-cps-plugin.version>
+        <workflow-step-api-plugin.version>2.20</workflow-step-api-plugin.version>
+        <workflow-cps-plugin.version>2.70</workflow-cps-plugin.version>
     </properties>
 
     <scm>
@@ -102,14 +102,26 @@
         </dependency>
 
         <dependency>
+            <groupId>org.jenkins-ci.plugins.workflow</groupId>
+            <artifactId>workflow-api</artifactId>
+            <version>2.32</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>structs</artifactId>
-            <version>1.14</version>
+            <version>1.18</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>script-security</artifactId>
-            <version>1.39</version>
+            <version>1.58</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.7</version>
         </dependency>
 
         <dependency>
@@ -133,19 +145,19 @@
         <dependency>
             <groupId>org.jenkins-ci.plugins.workflow</groupId>
             <artifactId>workflow-durable-task-step</artifactId>
-            <version>2.19</version>
+            <version>2.28</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins.workflow</groupId>
             <artifactId>workflow-job</artifactId>
-            <version>2.10</version>
+            <version>2.32</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>junit</artifactId>
-            <version>1.20</version>
+            <version>1.27</version>
             <scope>test</scope>
         </dependency>
 
